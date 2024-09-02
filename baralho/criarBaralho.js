@@ -6,8 +6,7 @@ function criarBaralho(req, res) {
     nome: req.body.titulo
     };
     baralhos.push(novoBaralho)
-    res.status(201).send({message: 'Baralho criado com sucesso!', baralho:
-    novoBaralho});
+    res.status(201).send({message: 'Baralho criado com sucesso!', baralho: novoBaralho});
 }
 
 module.exports = criarBaralho;

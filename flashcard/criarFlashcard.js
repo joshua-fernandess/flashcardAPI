@@ -3,7 +3,7 @@ const { flashcards } = require('../data');
 function criarFlashcard(req, res) {
     const novoFlashcard = {
     id: flashcards.length + 1,
-    nome: req.body.titulo
+    nome: req.body.pergunta
     };
     flashcards.push(novoFlashcard)
     res.status(201).send({message: 'Flashcard criado com sucesso!', flashcard:

@@ -1,7 +1,7 @@
 const { flashcards } = require('../data');
 
 const buscarFlashcardsPorPergunta = (req, res) => {
-    const {termo} = req.query;
+    const { termo } = req.query;
     const resultados = flashcards.filter(flashcard => 
         flashcard.pergunta.toLowerCase().includes(termo.toLowerCase()));
     if(resultados.length === 0){

@@ -16,9 +16,7 @@ const deletarBaralho = (req, res) => {
     }
     });
 
-    res.status(200).send({
-    message: 'Baralho deletado com sucesso!',
-    baralho: baralhoDeletado
+    res.status(200).send({ message: 'Baralho deletado com sucesso!', baralho: baralhoDeletado
     })
 }
 
